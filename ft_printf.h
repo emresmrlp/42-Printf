@@ -6,7 +6,7 @@
 /*   By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 13:07:24 by ysumeral          #+#    #+#             */
-/*   Updated: 2024/11/18 16:05:16 by ysumeral         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:27:09 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 # define FT_PRINTF_H
 # include <stdarg.h>
 # include <unistd.h>
+# ifdef __APPLE__
+#  define NULLSTRING "(null)"
+#  define NULLPOINTER "0x0"
+# else
+#  define NULLSTRING "(null)"
+#  define NULLPOINTER "(nil)"
+# endif
 
 int	ft_printf(const char *str, ...);
 int	ft_print_base(unsigned long n, char *base);

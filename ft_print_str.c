@@ -6,7 +6,7 @@
 /*   By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 13:09:26 by ysumeral          #+#    #+#             */
-/*   Updated: 2024/11/18 14:47:23 by ysumeral         ###   ########.fr       */
+/*   Updated: 2024/11/18 16:27:25 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_print_str(char *str)
 	int	counter;
 
 	counter = 0;
+	if (str == NULL)
+		return (ft_print_str(NULLSTRING));
 	while (*str)
 	{
 		counter += ft_print_chr(*str);
