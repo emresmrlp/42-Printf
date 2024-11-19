@@ -6,7 +6,7 @@
 #    By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/18 16:13:28 by ysumeral          #+#    #+#              #
-#    Updated: 2024/11/18 16:14:06 by ysumeral         ###   ########.fr        #
+#    Updated: 2024/11/19 12:29:35 by ysumeral         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,8 +24,6 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
 
-bonus: all
-
 clean:
 	$(RM) $(OBJS)
 
@@ -34,4 +32,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all, clean, fclean, re, bonus
+.PHONY: all, clean, fclean, re
