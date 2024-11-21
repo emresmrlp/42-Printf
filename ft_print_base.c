@@ -6,13 +6,13 @@
 /*   By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 15:00:53 by ysumeral          #+#    #+#             */
-/*   Updated: 2024/11/18 16:03:34 by ysumeral         ###   ########.fr       */
+/*   Updated: 2024/11/19 14:10:28 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_base(unsigned long n, char *base)
+int	ft_print_base(unsigned int n, char *base)
 {
 	int	counter;
 

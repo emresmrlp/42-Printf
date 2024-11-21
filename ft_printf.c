@@ -6,7 +6,7 @@
 /*   By: ysumeral <ysumeral@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 12:57:10 by ysumeral          #+#    #+#             */
-/*   Updated: 2024/11/19 12:29:11 by ysumeral         ###   ########.fr       */
+/*   Updated: 2024/11/19 14:06:09 by ysumeral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,19 +35,19 @@ static int	ft_check_format(char c, va_list *args)
 
 int	ft_printf(const char *str, ...)
 {
-	int		count;
+	int		counter;
 	va_list	args;
 
-	count = 0;
+	counter = 0;
 	va_start(args, str);
 	while (*str)
 	{
 		if (*str == '%' && *(++str))
-			count += ft_check_format(*(str), &args);
+			counter += ft_check_format(*(str), &args);
 		else
-			count += write(1, str, 1);
+			counter += write(1, str, 1);
 		str++;
 	}
 	va_end(args);
-	return (count);
+	return (counter);
 }
