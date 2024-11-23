@@ -16,7 +16,7 @@
 # include <unistd.h>
 
 int	ft_printf(const char *str, ...);
-int	ft_print_base(unsigned int n, char *base);
+int	ft_print_base(unsigned long n, char *base);
 int	ft_print_chr(int c);
 int	ft_print_str(char *str);
 int	ft_print_ptr(void *ptr);
