@@ -18,7 +18,7 @@ int	ft_print_str(char *str)
 
 	counter = 0;
 	if (str == NULL)
-		return (ft_print_str(NULLSTRING));
+		return (ft_print_str("(null)"));
 	while (*str)
 	{
 		counter += ft_print_chr(*str);
