@@ -20,7 +20,7 @@ int	ft_print_ptr(void *ptr)
 	counter = 0;
 	n = (unsigned long) ptr;
 	if (!ptr)
-		return (ft_print_str(NULLPOINTER));
+		return (ft_print_str("(nil)")); // Only Linux
 	counter += ft_print_str("0x");
 	counter += ft_print_base(n, "0123456789abcdef");
 	return (counter);
