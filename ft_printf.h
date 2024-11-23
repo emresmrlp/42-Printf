@@ -12,13 +12,6 @@
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-# ifdef __APPLE__
-#  define NULLSTRING "(null)"
-#  define NULLPOINTER "0x0"
-# else
-#  define NULLSTRING "(null)"
-#  define NULLPOINTER "(nil)"
-# endif
 # include <stdarg.h>
 # include <unistd.h>
 
