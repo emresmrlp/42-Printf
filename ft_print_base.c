@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_print_base(unsigned int n, char *base)
+int	ft_print_base(unsigned long n, char *base)
 {
 	int	counter;
 
