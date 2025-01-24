@@ -1,4 +1,4 @@
-# 42 Istanbul / FT_PRINTF
+# 42 Türkiye / FT_PRINTF
 
 - In this project, which aims to create our own alternative to the original printf function, we develop our own custom function.
 
